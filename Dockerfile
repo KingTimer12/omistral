@@ -1,5 +1,7 @@
 FROM rust:1.88-alpine as builder
 
+RUN apk add --no-cache build-base musl-dev
+
 # Create a new empty shell project
 WORKDIR /usr/src/app
 RUN cargo new --bin omistral
