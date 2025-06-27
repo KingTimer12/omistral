@@ -1,6 +1,6 @@
 FROM rust:1.88-alpine as builder
 
-RUN apk add --no-cache build-base musl-dev
+RUN apk add --no-cache build-base musl-dev openssl-dev pkgconf
 
 # Create a new empty shell project
 WORKDIR /usr/src/app
