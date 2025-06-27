@@ -1,0 +1,11 @@
+[package]
+name = "omistral"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+mistralrs = { git = "https://github.com/EricLBuehler/mistral.rs.git" }
+actix-rt = "2.10.0"
+actix-web = "4.9.0"
+tokio = "1.45.1"
+hf-hub = "0.4.3"
